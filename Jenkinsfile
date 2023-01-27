@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh  'touch cg_wuz_here.txt'
+                sh  'touch cg.txt'
                 sh 'echo "Success!"; exit 0'
             }
         }
