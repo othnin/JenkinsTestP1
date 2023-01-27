@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'touch cg_wuz_here.txt'
+                /bin/sh -c 'touch cg_wuz_here.txt'
+                /bin/sh -c 'ifconfig'
                 sh 'echo "Success!"; exit 0'
             }
         }
