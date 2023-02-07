@@ -3,6 +3,9 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                sh('''#!/usr/bin/env bash
+                                docker run hello-world
+                  ''')
                 sh  'touch cg.txt'
                 sh 'echo "Success!"; exit 0'
             }
